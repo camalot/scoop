@@ -1,0 +1,22 @@
+{
+    "version": "2.0.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/camalot/xget/releases/download/v2.0.1/xget_2.0.1_windows_amd64.zip",
+            "bin": [
+                "xget.exe"
+            ],
+            "hash": "2c422273921b89af88455386dda7c9038d697858b35e882de98fadd025ebb505"
+        },
+        "arm64": {
+            "url": "https://github.com/camalot/xget/releases/download/v2.0.1/xget_2.0.1_windows_arm64.zip",
+            "bin": [
+                "xget.exe"
+            ],
+            "hash": "2960d64860b73bfdca206a37b5768d39fcf851368bbfd104e6ebc487a955b843"
+        }
+    },
+    "homepage": "https://github.com/camalot/xget",
+    "license": "MIT",
+    "description": "xget is a tool for downloading binaries from the GitHub releases."
+}
