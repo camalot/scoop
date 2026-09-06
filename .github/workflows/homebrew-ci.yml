@@ -26,10 +26,10 @@ jobs:
           for file in Casks/*.rb; do
             echo "Processing $file"
             name="$(basename "${file%.rb}")"
-            description=$(grep -Po 'desc\s+"?\K[^"]+' "$file")
-            version=$(grep -Po 'version\s+"?\K[^"]+' "$file")
-            license=$(grep -Po 'license\s+"?\K[^"]+' "$file")
-            homepage=$(grep -Po 'homepage\s+"?\K[^"]+' "$file")
+            description=$(grep -Po 'desc\s+"?\K[^"]+' "$file" || true)
+            version=$(grep -Po 'version\s+"?\K[^"]+' "$file" || true)
+            license=$(grep -Po 'license\s+"?\K[^"]+' "$file" || true)
+            homepage=$(grep -Po 'homepage\s+"?\K[^"]+' "$file" || true)
 
             apps=$(echo "$apps" | jq --arg name "$name" --arg description "$description" --arg version "$version" --arg license "$license" --arg homepage "$homepage" \
               'if any(.[]; .name == $name) then
