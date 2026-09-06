@@ -1,0 +1,2344 @@
+# 📦 Custom Scoop Bucket
+
+Welcome to my personal [Scoop](https://scoop.sh/) package manager bucket for Windows! This repository contains custom manifests for applications not available in the main buckets.
+
+## 🚀 How to Install My Bucket
+
+To add this bucket to your local Scoop installation, open your PowerShell terminal and run:
+
+```shell
+scoop bucket add camalot https://github.com/camalot/scoop
+```
+
+Once the bucket is added, you can install any of the apps listed below:
+
+## 🛠️ Applications
+
+<table>
+  <thead>
+    <tr>
+      <th>Application</th>
+      <th>Description</th>
+      <th>Version</th>
+      <th>License</th>
+      <th>Manifest Link</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><strong><a href=""></a></strong></td>
+      <td></td>
+      <td><code></code></td>
+      <td></td>
+      <td><a href=".json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install </code></pre>
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
