@@ -1,0 +1,72 @@
+---
+name: Scoop CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '*.json'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - shell: bash
+        id: scoops
+        run: |
+          echo "::group::Collecting scoop apps"
+          # we need an array of scoop apps in JSON that match: {name, description, version, license, homepage}
+          # name: the base name of the JSON file without the .json extension
+          # the remaining fields are populated from the JSON file itself
+          # collect all JSON files and extract their metadata
+          
+          # we cannot modify the original JSON files, so we will extract the metadata without changing them
+          apps='[]'
+          for file in *.json; do
+            echo "Processing $file"
+            name="${file%.json}"
+            description=$(jq -r '.description // ""' "$file")
+            version=$(jq -r '.version // ""' "$file")
+            license=$(jq -r '.license // ""' "$file")
+            homepage=$(jq -r '.homepage // ""' "$file")
+
+            apps=$(echo "$apps" | jq --arg name "$name" --arg description "$description" --arg version "$version" --arg license "$license" --arg homepage "$homepage" \
+              'if any(.[]; .name == $name) then
+                map(if .name == $name then .description = $description | .version = $version | .license = $license | .homepage = $homepage else . end)
+              else
+                . + [{name: $name, description: $description, version: $version, license: $license, homepage: $homepage}]
+              end')
+          done
+          # update the apps array with the extracted metadata
+
+          apps=$(echo "$apps" | jq -c '.')
+          {
+            echo "apps<<EOF"
+            echo "$apps"
+            echo "EOF"
+            echo "::endgroup::"
+          } >> $GITHUB_OUTPUT
+
+      - uses: cuchi/jinja2-action@v1.3.0
+        with:
+          template: .github/templates/scoop.j2
+          output_file: SCOOPS.md
+          variables: |
+            apps=${{ steps.scoops.outputs.apps }}
+
+      - name: Commit updated SCOOPS.md
+        run: |
+          gh auth setup-git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add SCOOPS.md
+          git commit -m "Update SCOOPS.md" || echo "No changes to commit"
+          git push origin HEAD || echo "No changes to push"
+        env:
+          GH_TOKEN: ${{ github.token }}
