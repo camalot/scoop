@@ -48,19 +48,15 @@ jobs:
           # update the apps array with the extracted metadata
 
           apps=$(echo "$apps" | jq -c '.')
-          {
-            echo "apps<<EOF"
-            echo "$apps"
-            echo "EOF"
-          } >> $GITHUB_OUTPUT
+          echo "$apps" | jq '{apps: .}' > "$RUNNER_TEMP/.apps-data.json"
           echo "::endgroup::"
 
       - uses: cuchi/jinja2-action@v1.3.0
         with:
           template: .github/templates/scoop.j2
           output_file: SCOOPS.md
-          variables: |
-            apps=${{ steps.scoops.outputs.apps }}
+          data_file: ${{ runner.temp }}/.apps-data.json
+          data_format: json
 
       - name: Commit updated SCOOPS.md
         run: |
