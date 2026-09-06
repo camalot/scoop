@@ -25,7 +25,7 @@ Once the bucket is added, you can install any of the apps listed below:
     </tr>
   </thead>
   <tbody>
-  {% for app in apps %}
+  {%- for app in apps %}
     <tr>
       <td><strong><a href="{{ app.homepage }}">{{ app.name }}</a></strong></td>
       <td>{{ app.description }}</td>
@@ -38,6 +38,6 @@ Once the bucket is added, you can install any of the apps listed below:
         <pre><code>scoop install {{ app.name }}</code></pre>
       </td>
     </tr>
-  {% endfor %}
+  {%- endfor %}
   </tbody>
 </table>
