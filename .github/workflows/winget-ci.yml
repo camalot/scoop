@@ -34,7 +34,7 @@ jobs:
           # for example, if xget has new version 2.0.3, we need the path to the manifest file that was changed
           # this would be manifests/c/camalot/xget/2.0.3
 
-          changedManifests=$(git diff --name-only HEAD~1 HEAD | grep -E '^manifests/.*\.yaml$' || true)
+          changedManifests=$(git diff --name-only HEAD~1 HEAD | grep -E '^manifests/.*\.yaml$' | xargs -r -n1 dirname | sort -u || true)
           echo "Changed manifests: $changedManifests"
           {
             echo "files<<EOF"
