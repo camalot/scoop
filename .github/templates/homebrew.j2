@@ -1,16 +1,14 @@
-# 📦 {{ env['ORG'] }} Scoop Bucket
+# 📦 Camalot Homebrew Tap
 
-Welcome to {{ env['ORG'] }}'s personal [Scoop](https://scoop.sh/) package manager bucket for Windows! This repository contains custom manifests for applications not available in the main buckets.
+Welcome to Camalot's [Homebrew Tap](https://github.com/Homebrew/homebrew-cask). This repository contains custom manifests for applications not available in the main buckets.
 
-## 🚀 How to Install {{ env['ORG'] }}'s Bucket
+## 🚀 How to Install Camalot's Homebrew Tap
 
-To add this bucket to your local Scoop installation, open your PowerShell terminal and run:
+To add this tap to your local Homebrew installation, open your terminal and run:
 
 ```shell
-scoop bucket add {{ env['ORG'] }} https://github.com/{{ env['ORG'] }}/{{ env['REPO'] }}
+brew tap {{ env['ORG'] }}/{{ env['REPO'] }}
 ```
-
-Once the bucket is added, you can install any of the apps listed below:
 
 ## 🛠️ Applications
 
@@ -35,7 +33,7 @@ Once the bucket is added, you can install any of the apps listed below:
     </tr>
     <tr>
       <td colspan="5">
-        <pre><code>scoop install {{ app.name }}</code></pre>
+        <pre><code>brew install {{ env['ORG'] }}/{{ env['REPO'] }}/{{ app.name }}</code></pre>
       </td>
     </tr>
   {%- endfor %}

@@ -1,12 +1,12 @@
 ---
-name: Scoop CI
+name: Homebrew CI
 
 on:
   push:
     branches:
       - main
     paths:
-      - '*.json'
+      - 'Casks/**'
   workflow_dispatch:
 permissions: {}
 jobs:
@@ -23,20 +23,14 @@ jobs:
         id: scoops
         run: |
           echo "::group::Collecting scoop apps"
-          # we need an array of scoop apps in JSON that match: {name, description, version, license, homepage}
-          # name: the base name of the JSON file without the .json extension
-          # the remaining fields are populated from the JSON file itself
-          # collect all JSON files and extract their metadata
-          
-          # we cannot modify the original JSON files, so we will extract the metadata without changing them
           apps='[]'
-          for file in *.json; do
+          for file in Casks/**/*.rb; do
             echo "Processing $file"
-            name="${file%.json}"
-            description=$(jq -r '.description // ""' "$file")
-            version=$(jq -r '.version // ""' "$file")
-            license=$(jq -r '.license // ""' "$file")
-            homepage=$(jq -r '.homepage // ""' "$file")
+            name="$(basename "${file%.rb}")"
+            description=$(grep -Po 'desc\s+"?\K[^"]+' "$file")
+            version=$(grep -Po 'version\s+"?\K[^"]+' "$file")
+            license=$(grep -Po 'license\s+"?\K[^"]+' "$file")
+            homepage=$(grep -Po 'homepage\s+"?\K[^"]+' "$file")
 
             apps=$(echo "$apps" | jq --arg name "$name" --arg description "$description" --arg version "$version" --arg license "$license" --arg homepage "$homepage" \
               'if any(.[]; .name == $name) then
@@ -53,20 +47,21 @@ jobs:
 
       - uses: cuchi/jinja2-action@v1.3.0
         with:
-          template: .github/templates/scoop.j2
-          output_file: SCOOPS.md
+          template: .github/templates/homebrew.j2
+          output_file: HOMEBREW.md
           data_file: ${{ runner.temp }}/.apps-data.json
           data_format: json
         env:
           ORG: '${{ github.repository_owner }}'
           REPO: '${{ github.event.repository.name }}'
-      - name: Commit updated SCOOPS.md
+
+      - name: Commit updated HOMEBREW.md
         run: |
           gh auth setup-git
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add SCOOPS.md
-          git commit -m "Update SCOOPS.md" || echo "No changes to commit"
+          git add HOMEBREW.md
+          git commit -m "Update HOMEBREW.md" || echo "No changes to commit"
           git push origin HEAD || echo "No changes to push"
         env:
           GH_TOKEN: ${{ github.token }}
