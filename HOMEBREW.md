@@ -1,8 +1,8 @@
-# 📦 Camalot Homebrew Tap
+# 📦 camalot Homebrew Tap
 
-Welcome to Camalot's [Homebrew Tap](https://github.com/Homebrew/homebrew-cask). This repository contains custom manifests for applications not available in the main buckets.
+Welcome to camalot's [Homebrew Tap](https://github.com/Homebrew/homebrew-cask). This repository contains custom casks for applications not available in the main tap.
 
-## 🚀 How to Install Camalot's Homebrew Tap
+## 🚀 How to Install camalot's Homebrew Tap
 
 To add this tap to your local Homebrew installation, open your terminal and run:
 
@@ -19,7 +19,7 @@ brew tap camalot/scoop
       <th>Description</th>
       <th>Version</th>
       <th>License</th>
-      <th>Manifest Link</th>
+      <th>Cask</th>
     </tr>
   </thead>
   <tbody>
@@ -28,7 +28,7 @@ brew tap camalot/scoop
       <td>xget is a tool for downloading binaries from the GitHub releases.</td>
       <td><code>2.0.2</code></td>
       <td></td>
-      <td><a href="xget.json">JSON</a></td>
+      <td><a href="xget.rb">Cask</a></td>
     </tr>
     <tr>
       <td colspan="5">
