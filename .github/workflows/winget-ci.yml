@@ -77,7 +77,7 @@ jobs:
           echo "::group::Test Installing Changed Manifests"
           for manifest in ${{ steps.changed-manifests.outputs.files }}; do
             echo "Testing installation of $manifest"
-            if ! winget install "$manifest" --silent; then
+            if ! winget install "$manifest" --silent --disable-interactivity --accept-source-agreements --accept-package-agreements; then
               echo "Installation failed for $manifest" >&2
               exit 1
             fi
