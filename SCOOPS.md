@@ -1,8 +1,8 @@
-# 📦 Custom Scoop Bucket
+# 📦 camalot Scoop Bucket
 
-Welcome to my personal [Scoop](https://scoop.sh/) package manager bucket for Windows! This repository contains custom manifests for applications not available in the main buckets.
+Welcome to camalot's personal [Scoop](https://scoop.sh/) package manager bucket for Windows! This repository contains custom manifests for applications not available in the main buckets.
 
-## 🚀 How to Install My Bucket
+## 🚀 How to Install camalot's Bucket
 
 To add this bucket to your local Scoop installation, open your PowerShell terminal and run:
 
@@ -21,7 +21,7 @@ Once the bucket is added, you can install any of the apps listed below:
       <th>Description</th>
       <th>Version</th>
       <th>License</th>
-      <th>Manifest Link</th>
+      <th>Manifest</th>
     </tr>
   </thead>
   <tbody>
