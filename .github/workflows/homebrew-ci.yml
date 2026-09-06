@@ -20,11 +20,10 @@ jobs:
           fetch-depth: 0
 
       - shell: bash
-        id: scoops
         run: |
-          echo "::group::Collecting scoop apps"
+          echo "::group::Collecting homebrew apps"
           apps='[]'
-          for file in Casks/**/*.rb; do
+          for file in Casks/*.rb; do
             echo "Processing $file"
             name="$(basename "${file%.rb}")"
             description=$(grep -Po 'desc\s+"?\K[^"]+' "$file")

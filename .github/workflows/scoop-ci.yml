@@ -20,7 +20,6 @@ jobs:
           fetch-depth: 0
 
       - shell: bash
-        id: scoops
         run: |
           echo "::group::Collecting scoop apps"
           # we need an array of scoop apps in JSON that match: {name, description, version, license, homepage}
