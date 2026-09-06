@@ -1,8 +1,8 @@
-# 📦 Camalot Homebrew Tap
+# 📦 {{ env['ORG'] }} Homebrew Tap
 
-Welcome to Camalot's [Homebrew Tap](https://github.com/Homebrew/homebrew-cask). This repository contains custom manifests for applications not available in the main buckets.
+Welcome to {{ env['ORG'] }}'s [Homebrew Tap](https://github.com/Homebrew/homebrew-cask). This repository contains custom casks for applications not available in the main tap.
 
-## 🚀 How to Install Camalot's Homebrew Tap
+## 🚀 How to Install {{ env['ORG'] }}'s Homebrew Tap
 
 To add this tap to your local Homebrew installation, open your terminal and run:
 
@@ -19,7 +19,7 @@ brew tap {{ env['ORG'] }}/{{ env['REPO'] }}
       <th>Description</th>
       <th>Version</th>
       <th>License</th>
-      <th>Manifest Link</th>
+      <th>Cask</th>
     </tr>
   </thead>
   <tbody>
@@ -29,7 +29,7 @@ brew tap {{ env['ORG'] }}/{{ env['REPO'] }}
       <td>{{ app.description }}</td>
       <td><code>{{ app.version }}</code></td>
       <td>{{ app.license }}</td>
-      <td><a href="{{ app.name }}.json">JSON</a></td>
+      <td><a href="{{ app.name }}.rb">Cask</a></td>
     </tr>
     <tr>
       <td colspan="5">
