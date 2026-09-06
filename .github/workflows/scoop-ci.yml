@@ -8,10 +8,12 @@ on:
     paths:
       - '*.json'
   workflow_dispatch:
-
+permissions: {}
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v7
         with:
@@ -50,8 +52,8 @@ jobs:
             echo "apps<<EOF"
             echo "$apps"
             echo "EOF"
-            echo "::endgroup::"
           } >> $GITHUB_OUTPUT
+          echo "::endgroup::"
 
       - uses: cuchi/jinja2-action@v1.3.0
         with:
