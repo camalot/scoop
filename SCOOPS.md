@@ -25,7 +25,6 @@ Once the bucket is added, you can install any of the apps listed below:
     </tr>
   </thead>
   <tbody>
-  
     <tr>
       <td><strong><a href="https://github.com/camalot/xget">xget</a></strong></td>
       <td>xget is a tool for downloading binaries from the GitHub releases.</td>
@@ -38,6 +37,5 @@ Once the bucket is added, you can install any of the apps listed below:
         <pre><code>scoop install xget</code></pre>
       </td>
     </tr>
-  
   </tbody>
 </table>
