@@ -1,0 +1,77 @@
+---
+name: Winget CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      manifests/**
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Enable Local Manifest Files
+        shell: bash
+        run: |
+          winget settings --enable LocalManifestFiles
+
+      - name: Get Changed Manifests
+        id: changed-manifests
+        shell: bash
+        run: |
+          echo "::group::Changed Manifests"
+          # need to find manifests that have changed in the current commit
+          # we need to know the path of the changed manifests (we are going to only support multi-file manifests)
+          # for example, if xget has new version 2.0.3, we need the path to the manifest file that was changed
+          # this would be manifests/c/camalot/xget/2.0.3
+
+          changedManifests=$(git diff --name-only HEAD~1 HEAD | grep 'manifests/**/*.yaml')
+          echo "Changed manifests: $changedManifests"
+          echo "files=$changedManifests" >> $GITHUB_OUTPUT
+
+          echo "::endgroup::"
+
+      # if there are no changed manifests, skip the validation step
+      - name: Check for Changed Manifests
+        id: check-changed
+        shell: bash
+        run: |
+          if [ -z "${{ steps.changed-manifests.outputs.files }}" ]; then
+            echo "No changed manifests found."
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate Changed Manifests
+        if: ${{ steps.check-changed.outputs.skip == 'false' }}
+        shell: bash
+        run: |
+          echo "::group::Validating Changed Manifests"
+          failed_manifests=0
+          for manifest in ${{ steps.changed-manifests.outputs.files }}; do
+            echo "Validating $manifest"
+            if ! winget validate "$manifest"; then
+              failed_manifests=$((failed_manifests + 1))
+            fi
+          done
+          
+          if [ $failed_manifests -ne 0 ]; then
+            echo "Validation failed for $failed_manifests manifest(s)." >&2
+            exit 1
+          fi
+          echo "::endgroup::"
+          echo "::group::Test Installing Changed Manifests"
+          for manifest in ${{ steps.changed-manifests.outputs.files }}; do
+            echo "Testing installation of $manifest"
+            if ! winget install "$manifest" --silent; then
+              echo "Installation failed for $manifest" >&2
+              exit 1
+            fi
+          done
+          echo "::endgroup::"
