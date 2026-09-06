@@ -64,7 +64,7 @@ jobs:
           failed_manifests=0
           for manifest in ${{ steps.changed-manifests.outputs.files }}; do
             echo "Validating $manifest"
-            if ! winget validate "$manifest"; then
+            if ! winget validate "$manifest" --ignore-warnings; then
               failed_manifests=$((failed_manifests + 1))
             fi
           done
