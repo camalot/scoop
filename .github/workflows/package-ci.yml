@@ -32,7 +32,7 @@ jobs:
         uses: ./.github/actions/scoop
 
       - name: Upload generated documentation
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: generated-documentation
           path: |
@@ -67,7 +67,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download generated documentation
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: generated-documentation
           path: .
