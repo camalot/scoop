@@ -1,0 +1,40 @@
+---
+name: Generate Scoop documentation
+description: Generate SCOOPS.md from the Scoop manifests
+runs:
+  using: composite
+  steps:
+    - name: Collect Scoop apps
+      shell: bash
+      run: |
+        echo "::group::Collecting Scoop apps"
+        apps='[]'
+        for file in *.json; do
+          echo "Processing $file"
+          name="${file%.json}"
+          description=$(jq -r '.description // ""' "$file")
+          version=$(jq -r '.version // ""' "$file")
+          license=$(jq -r '.license // ""' "$file")
+          homepage=$(jq -r '.homepage // ""' "$file")
+
+          apps=$(echo "$apps" | jq --arg name "$name" --arg description "$description" --arg version "$version" --arg license "$license" --arg homepage "$homepage" \
+            'if any(.[]; .name == $name) then
+              map(if .name == $name then .description = $description | .version = $version | .license = $license | .homepage = $homepage else . end)
+            else
+              . + [{name: $name, description: $description, version: $version, license: $license, homepage: $homepage}]
+            end')
+        done
+
+        echo "$apps" | jq '{apps: .}' > "$RUNNER_TEMP/scoop-apps-data.json"
+        echo "::endgroup::"
+
+    - name: Render SCOOPS.md
+      uses: cuchi/jinja2-action@v1.3.0
+      with:
+        template: .github/templates/scoop.j2
+        output_file: SCOOPS.md
+        data_file: ${{ runner.temp }}/scoop-apps-data.json
+        data_format: json
+      env:
+        ORG: ${{ github.repository_owner }}
+        REPO: ${{ github.event.repository.name }}

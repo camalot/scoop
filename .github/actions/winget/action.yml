@@ -1,0 +1,56 @@
+---
+name: Validate Winget manifests
+description: Validate and test install the Winget manifests changed by the current commit
+runs:
+  using: composite
+  steps:
+    - name: Enable local manifest files
+      shell: bash
+      run: winget settings --enable LocalManifestFiles
+
+    - name: Get changed manifests
+      id: changed-manifests
+      shell: bash
+      run: |
+        echo "::group::Changed manifests"
+        changed_manifests=$(git diff --name-only HEAD~1 HEAD | grep -E '^manifests/.*\.yaml$' | xargs -r -n1 dirname | sort -u || true)
+        echo "Changed manifests: $changed_manifests"
+        {
+          echo "files<<EOF"
+          echo "$changed_manifests"
+          echo "EOF"
+        } >> "$GITHUB_OUTPUT"
+        echo "::endgroup::"
+
+    - name: Validate and install changed manifests
+      if: ${{ steps.changed-manifests.outputs.files != '' }}
+      shell: bash
+      env:
+        CHANGED_MANIFESTS: ${{ steps.changed-manifests.outputs.files }}
+      run: |
+        echo "::group::Validating changed manifests"
+        failed_manifests=0
+        while IFS= read -r manifest; do
+          [ -n "$manifest" ] || continue
+          echo "Validating $manifest"
+          if ! winget validate "$manifest" --ignore-warnings; then
+            failed_manifests=$((failed_manifests + 1))
+          fi
+        done <<< "$CHANGED_MANIFESTS"
+
+        if [ "$failed_manifests" -ne 0 ]; then
+          echo "Validation failed for $failed_manifests manifest(s)." >&2
+          exit 1
+        fi
+        echo "::endgroup::"
+
+        echo "::group::Test installing changed manifests"
+        while IFS= read -r manifest; do
+          [ -n "$manifest" ] || continue
+          echo "Testing installation of $manifest"
+          if ! winget install --manifest "$manifest" --silent --disable-interactivity --accept-source-agreements --accept-package-agreements; then
+            echo "Installation failed for $manifest" >&2
+            exit 1
+          fi
+        done <<< "$CHANGED_MANIFESTS"
+        echo "::endgroup::"

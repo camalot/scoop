@@ -1,0 +1,40 @@
+---
+name: Generate Homebrew documentation
+description: Generate HOMEBREW.md from the Homebrew casks
+runs:
+  using: composite
+  steps:
+    - name: Collect Homebrew apps
+      shell: bash
+      run: |
+        echo "::group::Collecting Homebrew apps"
+        apps='[]'
+        for file in Casks/*.rb; do
+          echo "Processing $file"
+          name="$(basename "${file%.rb}")"
+          description=$(grep -Po 'desc\s+"?\K[^"]+' "$file" || true)
+          version=$(grep -Po 'version\s+"?\K[^"]+' "$file" || true)
+          license=$(grep -Po 'license\s+"?\K[^"]+' "$file" || true)
+          homepage=$(grep -Po 'homepage\s+"?\K[^"]+' "$file" || true)
+
+          apps=$(echo "$apps" | jq --arg name "$name" --arg description "$description" --arg version "$version" --arg license "$license" --arg homepage "$homepage" \
+            'if any(.[]; .name == $name) then
+              map(if .name == $name then .description = $description | .version = $version | .license = $license | .homepage = $homepage else . end)
+            else
+              . + [{name: $name, description: $description, version: $version, license: $license, homepage: $homepage}]
+            end')
+        done
+
+        echo "$apps" | jq '{apps: .}' > "$RUNNER_TEMP/homebrew-apps-data.json"
+        echo "::endgroup::"
+
+    - name: Render HOMEBREW.md
+      uses: cuchi/jinja2-action@v1.3.0
+      with:
+        template: .github/templates/homebrew.j2
+        output_file: HOMEBREW.md
+        data_file: ${{ runner.temp }}/homebrew-apps-data.json
+        data_format: json
+      env:
+        ORG: ${{ github.repository_owner }}
+        REPO: ${{ github.event.repository.name }}

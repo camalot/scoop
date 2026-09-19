@@ -1,0 +1,91 @@
+---
+name: Package CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '*.json'
+      - 'Casks/**'
+      - 'manifests/**'
+  workflow_dispatch: {}
+
+permissions: {}
+
+concurrency:
+  group: package-ci-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-documentation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Generate Homebrew documentation
+        uses: ./.github/actions/homebrew
+
+      - name: Generate Scoop documentation
+        uses: ./.github/actions/scoop
+
+      - name: Upload generated documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-documentation
+          path: |
+            HOMEBREW.md
+            SCOOPS.md
+          if-no-files-found: error
+          retention-days: 1
+
+  validate-winget:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Validate Winget manifests
+        uses: ./.github/actions/winget
+
+  publish-documentation:
+    needs:
+      - generate-documentation
+      - validate-winget
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download generated documentation
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-documentation
+          path: .
+
+      - name: Commit generated documentation
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add HOMEBREW.md SCOOPS.md
+
+          if git diff --cached --quiet; then
+            echo "No documentation changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update package documentation"
+          git pull --rebase origin main
+          git push origin HEAD:main
