@@ -21,13 +21,15 @@ runs:
             [ -n "$nuspec" ] || continue
 
             echo "Processing $nuspec"
-            name=$(grep -Po '(?<=<id>).*?(?=</id>)' "$nuspec" | head -n1)
-            version=$(grep -Po '(?<=<version>).*?(?=</version>)' "$nuspec" | head -n1)
-            description=$(grep -Po '(?<=<summary>).*?(?=</summary>)' "$nuspec" | head -n1)
-            homepage=$(grep -Po '(?<=<projectUrl>).*?(?=</projectUrl>)' "$nuspec" | head -n1)
+            # `|| true` on each: shell: bash runs with -e -o pipefail, and grep exits 1 on
+            # no match, which would otherwise abort the whole step for any optional/missing field
+            name=$(grep -Po '(?<=<id>).*?(?=</id>)' "$nuspec" | head -n1 || true)
+            version=$(grep -Po '(?<=<version>).*?(?=</version>)' "$nuspec" | head -n1 || true)
+            description=$(grep -Po '(?<=<summary>).*?(?=</summary>)' "$nuspec" | head -n1 || true)
+            homepage=$(grep -Po '(?<=<projectUrl>).*?(?=</projectUrl>)' "$nuspec" | head -n1 || true)
             # only nuspecs with a plain-text <license type="expression"> element populate this;
             # a bare <licenseUrl> isn't shown here since a raw URL reads poorly in the table
-            license=$(grep -Po '(?<=<license type="expression">).*?(?=</license>)' "$nuspec" | head -n1)
+            license=$(grep -Po '(?<=<license type="expression">).*?(?=</license>)' "$nuspec" | head -n1 || true)
 
             [ -n "$name" ] || continue
 
