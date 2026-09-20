@@ -9,6 +9,7 @@ on:
       - '*.json'
       - 'Casks/**'
       - 'manifests/**'
+      - 'chocolatey/**'
   workflow_dispatch: {}
 
 permissions: {}
@@ -31,6 +32,9 @@ jobs:
       - name: Generate Scoop documentation
         uses: ./.github/actions/scoop
 
+      - name: Generate Chocolatey documentation
+        uses: ./.github/actions/chocolatey
+
       - name: Upload generated documentation
         uses: actions/upload-artifact@v7
         with:
@@ -38,6 +42,7 @@ jobs:
           path: |
             HOMEBREW.md
             SCOOPS.md
+            CHOCOLATEYS.md
           if-no-files-found: error
           retention-days: 1
 
@@ -79,7 +84,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add HOMEBREW.md SCOOPS.md
+          git add HOMEBREW.md SCOOPS.md CHOCOLATEYS.md
 
           if git diff --cached --quiet; then
             echo "No documentation changes to commit"

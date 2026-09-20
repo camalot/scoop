@@ -1,0 +1,55 @@
+---
+name: Generate Chocolatey documentation
+description: Generate CHOCOLATEYS.md from the Chocolatey feed
+runs:
+  using: composite
+  steps:
+    - name: Collect Chocolatey packages
+      shell: bash
+      run: |
+        echo "::group::Collecting Chocolatey packages"
+        apps='[]'
+        if [ -d chocolatey ]; then
+          # feed layout: chocolatey/<owner-first-char>/<owner>/<package-name>/<version>/<package-name>.nuspec
+          for pkg_dir in chocolatey/*/*/*/; do
+            [ -d "$pkg_dir" ] || continue
+
+            latest_version=$(find "$pkg_dir" -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort -V | tail -n1)
+            [ -n "$latest_version" ] || continue
+
+            nuspec=$(find "$pkg_dir$latest_version" -maxdepth 1 -name '*.nuspec' -print -quit)
+            [ -n "$nuspec" ] || continue
+
+            echo "Processing $nuspec"
+            name=$(grep -Po '(?<=<id>).*?(?=</id>)' "$nuspec" | head -n1)
+            version=$(grep -Po '(?<=<version>).*?(?=</version>)' "$nuspec" | head -n1)
+            description=$(grep -Po '(?<=<summary>).*?(?=</summary>)' "$nuspec" | head -n1)
+            homepage=$(grep -Po '(?<=<projectUrl>).*?(?=</projectUrl>)' "$nuspec" | head -n1)
+            # only nuspecs with a plain-text <license type="expression"> element populate this;
+            # a bare <licenseUrl> isn't shown here since a raw URL reads poorly in the table
+            license=$(grep -Po '(?<=<license type="expression">).*?(?=</license>)' "$nuspec" | head -n1)
+
+            [ -n "$name" ] || continue
+
+            apps=$(echo "$apps" | jq --arg name "$name" --arg description "$description" --arg version "$version" --arg license "$license" --arg homepage "$homepage" --arg manifest_path "$nuspec" \
+              'if any(.[]; .name == $name) then
+                map(if .name == $name then .description = $description | .version = $version | .license = $license | .homepage = $homepage | .manifest_path = $manifest_path else . end)
+              else
+                . + [{name: $name, description: $description, version: $version, license: $license, homepage: $homepage, manifest_path: $manifest_path}]
+              end')
+          done
+        fi
+
+        echo "$apps" | jq '{apps: .}' > "$RUNNER_TEMP/chocolatey-apps-data.json"
+        echo "::endgroup::"
+
+    - name: Render CHOCOLATEYS.md
+      uses: cuchi/jinja2-action@v1.3.0
+      with:
+        template: .github/templates/chocolatey.j2
+        output_file: CHOCOLATEYS.md
+        data_file: ${{ runner.temp }}/chocolatey-apps-data.json
+        data_format: json
+      env:
+        ORG: ${{ github.repository_owner }}
+        REPO: ${{ github.event.repository.name }}
