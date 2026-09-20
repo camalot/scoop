@@ -38,5 +38,17 @@ Once the source is added, you can install any of the packages listed below:
         <pre><code>choco install xget --source="camalot"</code></pre>
       </td>
     </tr>
+    <tr>
+      <td><strong><a href="https://github.com/TacoContent/ironstate">ironstate</a></strong></td>
+      <td>ironstate is a declarative, Ansible-style task runner driven by YAML.</td>
+      <td><code>0.4.3</code></td>
+      <td></td>
+      <td><a href="chocolatey/t/tacocontent/ironstate/0.4.3/ironstate.nuspec">nuspec</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>choco install ironstate --source="camalot"</code></pre>
+      </td>
+    </tr>
   </tbody>
 </table>
