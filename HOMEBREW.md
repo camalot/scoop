@@ -24,6 +24,18 @@ brew tap camalot/scoop
   </thead>
   <tbody>
     <tr>
+      <td><strong><a href="https://github.com/TacoContent/ironstate">ironstate</a></strong></td>
+      <td>ironstate is a declarative, Ansible-style task runner driven by YAML.</td>
+      <td><code>0.4.3</code></td>
+      <td></td>
+      <td><a href="ironstate.rb">Cask</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>brew install camalot/scoop/ironstate</code></pre>
+      </td>
+    </tr>
+    <tr>
       <td><strong><a href="https://github.com/camalot/xget">xget</a></strong></td>
       <td>xget is a tool for downloading binaries from the GitHub releases.</td>
       <td><code>2.1.2</code></td>

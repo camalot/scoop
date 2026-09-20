@@ -26,6 +26,18 @@ Once the bucket is added, you can install any of the apps listed below:
   </thead>
   <tbody>
     <tr>
+      <td><strong><a href="https://github.com/TacoContent/ironstate">ironstate</a></strong></td>
+      <td>ironstate is a declarative, Ansible-style task runner driven by YAML.</td>
+      <td><code>0.4.3</code></td>
+      <td>MIT</td>
+      <td><a href="ironstate.json">JSON</a></td>
+    </tr>
+    <tr>
+      <td colspan="5">
+        <pre><code>scoop install ironstate</code></pre>
+      </td>
+    </tr>
+    <tr>
       <td><strong><a href="https://github.com/camalot/xget">xget</a></strong></td>
       <td>xget is a tool for downloading binaries from the GitHub releases.</td>
       <td><code>2.1.2</code></td>
