@@ -38,7 +38,7 @@ brew tap camalot/scoop
     <tr>
       <td><strong><a href="https://github.com/camalot/xget">xget</a></strong></td>
       <td>xget is a tool for downloading binaries from the GitHub releases.</td>
-      <td><code>2.1.2</code></td>
+      <td><code>2.2.0</code></td>
       <td></td>
       <td><a href="xget.rb">Cask</a></td>
     </tr>
