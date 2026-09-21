@@ -29,9 +29,9 @@ Once the source is added, you can install any of the packages listed below:
     <tr>
       <td><strong><a href="https://github.com/camalot/xget">xget</a></strong></td>
       <td>xget is a tool for downloading binaries from the GitHub releases.</td>
-      <td><code>2.1.2</code></td>
+      <td><code>2.2.0</code></td>
       <td></td>
-      <td><a href="chocolatey/c/camalot/xget/2.1.2/xget.nuspec">nuspec</a></td>
+      <td><a href="chocolatey/c/camalot/xget/2.2.0/xget.nuspec">nuspec</a></td>
     </tr>
     <tr>
       <td colspan="5">
