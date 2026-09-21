@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>xget</id>
+    <version>2.2.0</version>
+    <title>xget</title>
+    <authors>Ryan Conrad</authors>
+    <owners>camalot</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/camalot/xget/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/camalot/xget</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/camalot/xget/refs/heads/main/winres/xget-logo-256x256.png</iconUrl>
+    <description>xget is a tool for downloading binaries from the GitHub releases.</description>
+    <summary>xget is a tool for downloading binaries from the GitHub releases.</summary>
+    <copyright>Copyright © 2026 Ryan Conrad</copyright>
+    <tags>download github-release package-manager cli</tags>
+    <projectSourceUrl>https://github.com/camalot/xget</projectSourceUrl>
+    <packageSourceUrl>https://github.com/camalot/xget</packageSourceUrl>
+    <docsUrl>https://github.com/camalot/xget#readme</docsUrl>
+    <bugTrackerUrl>https://github.com/camalot/xget/issues</bugTrackerUrl>
+  </metadata>
+</package>
