@@ -26,7 +26,7 @@ brew tap camalot/scoop
     <tr>
       <td><strong><a href="https://github.com/TacoContent/ironstate">ironstate</a></strong></td>
       <td>ironstate is a declarative, Ansible-style task runner driven by YAML.</td>
-      <td><code>0.4.3</code></td>
+      <td><code>0.5.0</code></td>
       <td></td>
       <td><a href="ironstate.rb">Cask</a></td>
     </tr>
