@@ -41,9 +41,9 @@ Once the source is added, you can install any of the packages listed below:
     <tr>
       <td><strong><a href="https://github.com/TacoContent/ironstate">ironstate</a></strong></td>
       <td>ironstate is a declarative, Ansible-style task runner driven by YAML.</td>
-      <td><code>0.4.3</code></td>
+      <td><code>0.5.0</code></td>
       <td></td>
-      <td><a href="chocolatey/t/tacocontent/ironstate/0.4.3/ironstate.nuspec">nuspec</a></td>
+      <td><a href="chocolatey/t/tacocontent/ironstate/0.5.0/ironstate.nuspec">nuspec</a></td>
     </tr>
     <tr>
       <td colspan="5">
