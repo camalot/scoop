@@ -28,7 +28,7 @@ Once the bucket is added, you can install any of the apps listed below:
     <tr>
       <td><strong><a href="https://github.com/TacoContent/ironstate">ironstate</a></strong></td>
       <td>ironstate is a declarative, Ansible-style task runner driven by YAML.</td>
-      <td><code>0.5.0</code></td>
+      <td><code>0.6.0</code></td>
       <td>MIT</td>
       <td><a href="ironstate.json">JSON</a></td>
     </tr>
