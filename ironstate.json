@@ -1,19 +1,19 @@
 {
-    "version": "0.9.0",
+    "version": "0.10.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TacoContent/ironstate/releases/download/v0.9.0/ironstate_0.9.0_windows_amd64.zip",
+            "url": "https://github.com/TacoContent/ironstate/releases/download/v0.10.0/ironstate_0.10.0_windows_amd64.zip",
             "bin": [
                 "ironstate.exe"
             ],
-            "hash": "e632efcdd38e861c3b171884233c6c6be3664ef0ead3061e576d4feed3238171"
+            "hash": "a0fc751819d4807acba9b4f9caa61309b413315e7aeff69b0366a3d6a0c58e72"
         },
         "arm64": {
-            "url": "https://github.com/TacoContent/ironstate/releases/download/v0.9.0/ironstate_0.9.0_windows_arm64.zip",
+            "url": "https://github.com/TacoContent/ironstate/releases/download/v0.10.0/ironstate_0.10.0_windows_arm64.zip",
             "bin": [
                 "ironstate.exe"
             ],
-            "hash": "ffd3c3a0eb2992a8a62700b64f60c95d1478ee7ad67704c53f2e4b2616e984d0"
+            "hash": "b1c8f7caa4bee6e84da83ef2e116829e7edadbaedd04b42ac976b00b18c93700"
         }
     },
     "homepage": "https://github.com/TacoContent/ironstate",
