@@ -1,19 +1,19 @@
 {
-    "version": "2.7.0",
+    "version": "2.8.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/camalot/xget/releases/download/v2.7.0/xget_2.7.0_windows_amd64.zip",
+            "url": "https://github.com/camalot/xget/releases/download/v2.8.0/xget_2.8.0_windows_amd64.zip",
             "bin": [
                 "xget.exe"
             ],
-            "hash": "97c4d709256591237727d74d3930e51496f0868d4f3d4d4a026e6b46a3b03174"
+            "hash": "7f3be6fef473e4ae86dec9c23dfd941c35e320864f65004dc74d98c103e81acf"
         },
         "arm64": {
-            "url": "https://github.com/camalot/xget/releases/download/v2.7.0/xget_2.7.0_windows_arm64.zip",
+            "url": "https://github.com/camalot/xget/releases/download/v2.8.0/xget_2.8.0_windows_arm64.zip",
             "bin": [
                 "xget.exe"
             ],
-            "hash": "7eb83f093159451ca597336cf274c0f64505185d5536075240bc67100b70132e"
+            "hash": "ae5188b74a5771e47e6ab6c3628258aef94034b16ab459cbec82bcbe54e1f03c"
         }
     },
     "homepage": "https://github.com/camalot/xget",
